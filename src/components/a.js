@@ -66,7 +66,7 @@ const Middle = styled.div`
 const Title = styled.h1`
   color: #333;
 
-  font-size: 4.1vw;
+  font-size: 2rem;
 `;
 
 const SubTitle = styled.h3`
