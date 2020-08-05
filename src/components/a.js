@@ -60,19 +60,21 @@ const Middle = styled.div`
   width: 100%;
 
   grid-row: 2/3;
-  grid-column: 2/6;
+  grid-column: 1/7;
 `;
 
 const Title = styled.h1`
   color: #333;
 
-  font-size: 2rem;
+  font-size: 1.5em;
 `;
 
 const SubTitle = styled.h3`
   color: #333;
 
   font-weight: normal;
+
+  font-size: 1.1em;
 `;
 
 const Orange = styled.span`
