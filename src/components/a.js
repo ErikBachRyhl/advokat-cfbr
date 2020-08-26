@@ -6,12 +6,12 @@ import blobtop from '../images/bloptop.png';
 import blobbot from '../images/blobbot.png';
 
 const StyledSection = styled.section`
-  height: 100vh;
+  height: 700px;
   width: 100vw;
 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 
   position: relative;
 `;
@@ -21,7 +21,7 @@ const Top = styled.div`
   width: 100%;
 
   grid-row: 1/2;
-  grid-column: 1/7;
+  grid-column: span;
 
   display: flex;
 `;
@@ -60,7 +60,7 @@ const Middle = styled.div`
   width: 100%;
 
   grid-row: 2/3;
-  grid-column: 1/7;
+  grid-column: span;
 `;
 
 const Title = styled.h1`
@@ -86,14 +86,14 @@ const Bottom = styled.div`
   width: 100%;
 
   grid-row: 3/4;
-  grid-column: 1/7;
+  grid-column: span;
   background-image: url(${blobbot});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
 `;
 
-const A = () => {
+const sectionA = () => {
   return (
     <StyledSection>
       <Top>
@@ -108,13 +108,13 @@ const A = () => {
       <Middle>
         <Title>Advokat Charlotte Friis Bach Ryhl</Title>
         <SubTitle>
-          specialiseret advokat inden for <Orange>konkurrenceret</Orange> og{' '}
+          Specialiseret advokat inden for <Orange>konkurrenceret</Orange> og{' '}
           <Orange>udbudsret</Orange>
         </SubTitle>
       </Middle>
-      <Bottom />
+      <Bottom></Bottom>
     </StyledSection>
   );
 };
 
-export default A;
+export default sectionA;
