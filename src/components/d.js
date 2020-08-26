@@ -64,6 +64,10 @@ const Paragraph = styled.p`
 
 const Orange = styled.span`
   color: #ffa012;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 const BottomColumn = styled.div`
@@ -100,8 +104,8 @@ const sectionD = () => {
           28, 1306 København K (www.advokatnaevnet.dk). Jeg er medlem af Dansk
           Forening for Europaret, Dansk Forening for Konkurrenceret og Dansk
           Forening for Udbudsret. Jeg kan kontaktes på telefon{' '}
-          <Orange>(+45) 4054 1912</Orange>
-          eller e-mail <Orange>charlotte@friisbachryhl.dk</Orange>.
+          <Orange>(+45) 4054 1912</Orange> eller e-mail{' '}
+          <Orange>charlotte@friisbachryhl.dk</Orange>.
         </Paragraph>
       </MiddleColumn>
       <BottomColumn></BottomColumn>
